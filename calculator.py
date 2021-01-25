@@ -1,19 +1,19 @@
 #Defining functions
 
 #Function that will add
-def add(x,y):
+def add(x, y):
   return x+y
  
 #Function that will subtract
-def sub(x,y):
+def sub(x, y):
   return x-y
  
 #Function that will multiply
-def mul(x,y):
+def mul(x, y):
   return x*y
  
 #Function that will divide 
-def div(x,y):
+def div(x, y):
   return x/y
 
 #Briefing about the choices the user have
@@ -28,21 +28,21 @@ while True:
   choice = input("Enter your choice: ")
   
   if choice in ('1', '2', '3', '4'):
-    x = float(input("Enter the first number: "))
-    y = float(input("Enter the second number: "))
+    n1 = float(input("Enter the first number: "))
+    n2 = float(input("Enter the second number: "))
 
     #Generating output as per the user
     if(choice=='1'):
-      print(x, "+", y, "=", add(x,y))
+      print(n1, "+", n2, "=", add(n1, n2))
 
     elif(choice=='2'):
-      print(x, "-", y, "=", sub(x,y))
+      print(n1, "-", n2, "=", sub(n1, n2))
 
     elif(choice=='3'):
-      print(x, "*", y, "=", mul(x,y))
+      print(n1, "*", n2, "=", mul(n1, n2))
 
     elif(choice=='4'):
-      print(x, "/", y, "=", div(x,y))
+      print(n1, "/", n2, "=", div(n1, n2))
     break
-else:
-  print("Invalid selection")
+  else:
+    print("Invalid selection")
